@@ -3,7 +3,7 @@
 ### *Luopeiwen Yi*  
 ---
 
-## **1Introduction**  
+## **1. Introduction**  
 
 GPT-2 is a **transformer-based large language model** developed by OpenAI for text generation tasks. While the pre-trained GPT-2 model has been trained on a diverse corpus, **fine-tuning** it on a domain-specific dataset like **WikiText** allows it to specialize in a particular style or topic.
 
@@ -18,7 +18,7 @@ We also analyze whether fine-tuning improves or degrades text relevance, and whe
 
 ---
 
-## **Experiment Setup**  
+## **2. Experiment Setup**  
 
 ### **2.1 Dataset: WikiText-2**  
 - **Training Set:** Used to train the model  
@@ -42,7 +42,7 @@ We tested **two fine-tuning approaches**:
 
 ---
 
-## **Results**  
+## **3. Results**  
 
 ### **3.1 Comparison Table of Fine-Tuning Methods**  
 
@@ -57,7 +57,7 @@ We prompted each model with:
 
 ---
 
-## **Conclusion & Discussion**  
+## **4. Conclusion & Discussion**  
 
 ### **4.1 Pre-trained GPT-2: General but Inconsistent**  
 - **Text:** Produces general, somewhat repetitive AI-related text.  
@@ -111,7 +111,7 @@ We prompted each model with:
 
 ---
 
-### **Conclusion: Which Model is Best?**  
+### **5. Conclusion: Which Model is Best?**  
 
 | Model | **Best Use Case** |
 |--------|------------------|
@@ -120,7 +120,7 @@ We prompted each model with:
 | **LoRA Fine-Tuned GPT-2** | Best trade-off between efficiency, adaptation, and topic relevance |
 
 
-### **Final Thought: Fine-Tuning Must Be Done Carefully**  
+### **6. Final Thought: Fine-Tuning Must Be Done Carefully**  
 **Fine-tuning is not always beneficial**—without proper dataset selection, fine-tuning can cause **knowledge loss and topic drift rather than meaningful improvements**.  
 
 **LoRA fine-tuning proves to be the most effective approach**, offering a balance between **efficient learning, topic relevance, and knowledge retention** while avoiding the computational cost of full fine-tuning.  
